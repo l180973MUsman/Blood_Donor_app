@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_marginTop="100dp"
+    android:layout_marginBottom="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Name">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtBG"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_marginLeft="6dp"
+        android:text="Blood Group">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtCon"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBG"
+        android:layout_marginLeft="6dp"
+        android:text="Contact">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtLoc"
+        android:layout_below="@+id/txtCon"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="Location">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtStat"
+        android:layout_below="@+id/txtLoc"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="Status">
+
+    </TextView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:src="@drawable/ic_baseline_call_24"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtName"
+        android:layout_alignBottom="@+id/txtBG"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-64dp"
+        android:src="@drawable/ic_baseline_message_24"
+        />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:layout_marginBottom="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:id="@+id/txtRegistration"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:text="Donor SignUp">
+
+        android:text="Donor Signup">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRegistration"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Blood Group" />
+
+    <EditText
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Contact" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Location" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:hint="Status" />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="0dp"
+        android:onClick="submit"
+        android:hint="Register" />
+</RelativeLayout>
